@@ -1,0 +1,201 @@
+/* body */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* headernav cafename */
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+/* banner h3 */
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* start header section */
+/* start header nav section */
+#headernav{
+    background-color: rgb(187, 113, 21);
+}
+
+.cafename{
+    color: #000;
+    font-family: 'Sigmar', cursive;
+    text-decoration: none;
+
+    padding-right: 50px;
+}
+
+.cafename img{
+    width: 75px;
+}
+
+@media (max-width:1200px){
+    .dropdown-menu{
+        background-color: rgb(187, 113, 21);
+    }
+}
+
+.nav-link{
+    text-transform: uppercase;
+}
+/* end header nav section */
+
+
+/* start header intro section */
+#headerintros{
+    height: 30px;
+    background-color: burlywood;
+    text-align: center;
+
+    display: none;
+}
+
+.intros-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10px;
+}
+
+/* .intros-container table{
+    margin-top: 10px;
+} */
+
+@media (min-width: 1200px){
+    #headerintros{
+        display: block;
+    }
+}
+/* end header intro section */
+/* end header section */
+
+
+
+/* start home section */
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(187, 113, 21);
+    background-image: url(./../assets/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.homebannerdiv h3{
+    color: #f4f4f4;
+    font-family: 'Ma Shan Zheng', cursive;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+@media (max-width: 1200px){
+    .homebannerdiv h3{
+        color: #000;
+    }
+}
+/* end home section */
+
+
+/* start about section */
+#about{
+    background-color: rgb(187, 113, 21);
+    text-align: center;
+}
+
+.testimonial-container{
+    width: 100%;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    position: relative;
+}
+
+.fa-quote{
+    color: #000;
+    font-size: 30px;
+    
+    position: absolute;
+    top: 10px;
+}
+
+.fa-quote-right{
+    right: 0;
+}
+
+.fa-quote-left{
+    left: 0;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+
+    animation-name: myprogressbar;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: left center;
+}
+
+@keyframes myprogressbar{
+    0%{
+        transform: scaleX(0);
+    }
+}
+
+
+.cafeimage{
+    background-color: #f4f4f4;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.columns{
+    max-width: 25%;
+    padding: 0 5px;
+}
+
+.columns img{
+    width: 100%;
+    height: 250px;
+
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.columns img:hover{
+    opacity: 0.8;
+}
+
+@media (max-width: 800px){
+    .columns{
+        max-width: 50%;
+    }
+}
+
+.history{
+    margin-bottom: 5px;
+}
+/* end about section */
