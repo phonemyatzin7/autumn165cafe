@@ -10,7 +10,7 @@
     <!-- jquery ui css1 js1 -->
     <link href="./assets/libs/jquery-ui-1.13.2.custom/jquery-ui.min.css" rel="stylesheet" type="text/css" />
      <!-- magnific popup css1 js1 -->
-    <link href="./assets/libs/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="./assets/libs/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet" type="text/css" /> -->
     <!-- custom css1 -->
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -32,12 +32,12 @@
                         <li class="nav-item dropdown">
                             <a href="#menu" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Menu</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#coffee" class="dropdown-item">Coffee</a></li>
-                                <li><a href="#tea" class="dropdown-item">Tea</a></li>
-                                <li><a href="#juice" class="dropdown-item">Juice</a></li>
-                                <li><a href="#smoothies" class="dropdown-item">Smoothies</a></li>
-                                <li><a href="#bread" class="dropdown-item">Bread</a></li>
-                                <li><a href="#cake" class="dropdown-item">Cake</a></li>
+                                <li><a href="#menu" class="dropdown-item">Coffee</a></li>
+                                <li><a href="#menu" class="dropdown-item">Tea</a></li>
+                                <li><a href="#menu" class="dropdown-item">Juice</a></li>
+                                <li><a href="#menu" class="dropdown-item">Snack</a></li>
+                                <li><a href="#menu" class="dropdown-item">Bread</a></li>
+                                <li><a href="#menu" class="dropdown-item">Cake</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
@@ -136,7 +136,19 @@
             <div class="row">
                 <div class="history">
                     <h4>About</h4>
-                    <p><strong>Autumn 165 Cafe</strong> is opened by <strong>Mrs.Lee Ji Eun</strong> since 2016. She opened in Grindelwald Switzerland. The purpose of cafe is to make people feel relax, peaceful, happy and to know them how good coffee can make them good emotions.</p>
+                    <p><strong>Mrs.Lee Ji Eun</strong> is opened <strong>Autumn 165 Cafe</strong> since 2016. She opened in Grindelwald Switzerland. The purpose of cafe is to make people feel relax, peaceful, happy and to know them how good coffee can make them good emotions.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 align-self-center booking">
+                    <h4>Booking</h4>
+                    <p>Reserve a table</p>
+                    <a href="#" class="btn btn-lg btn-primary bookingbtn">Make Booking</a>
+                </div>
+
+                <div class="col-md-6 text-center text-lg-end bookingpic">
+                    <img src="./assets/img/iu1-removebg-preview.png" width="300px" alt="iu1" />
                 </div>
             </div>
         </div>
@@ -145,7 +157,136 @@
 
 
 <!-- start menu section -->
-    <section id="menu"></section>
+    <section id="menu">
+        <h1><u>Menu</u></h1>
+        <div class="row">
+            <!-- start coffee -->
+            <div class="col-md-2">
+                <div class="menubox">
+                    <div class="menubox-header">
+                        <div class="imgbox">
+                            <img src="./assets/img/coffee-removebg-preview.png" alt="coffee" />
+                        </div>
+                        <h2 class="menubox-title">Coffee</h2>
+                    </div>
+                    <div class="menubox-body">
+                        <p>Black Coffee - $7</p>
+                        <p>Latte - $7</p>
+                        <p>Cappuccino - $7</p>
+                        <p>Americano - $7</p>
+                        <p>Espresso - $7</p>
+                        <p>Mocha - $7</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end coffee -->
+
+            <!-- start tea -->
+            <div class="col-md-2">
+                <div class="menubox">
+                    <div class="menubox-header">
+                        <div class="imgbox">
+                            <img src="./assets/img/tea-removebg-preview.png" alt="tea" />
+                        </div>
+                        <h2 class="menubox-title">Tea</h2>
+                    </div>
+                    <div class="menubox-body">
+                        <p>Black Tea - $7</p>
+                        <p>Green Tea - $7</p>
+                        <p>Herbal Tea - $7</p>
+                        <p>White Tea - $7</p>
+                        <p>Oolong Tea - $7</p>
+                        <p>Lemon Tea - $7</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end tea -->
+
+            <!-- start juice -->
+            <div class="col-md-2">
+                <div class="menubox">
+                    <div class="menubox-header">
+                        <div class="imgbox">
+                            <img src="./assets/img/smoothie-removebg-preview.png" alt="juice" />
+                        </div>
+                        <h2 class="menubox-title">Jucie</h2>
+                    </div>
+                    <div class="menubox-body">
+                        <p>Apple Juice - $7</p>
+                        <p>Strawberry Juice - $7</p>
+                        <p>Orange Juice - $7</p>
+                        <p>Lime Juice - $7</p>
+                        <p>Blueberry Juice - $7</p>
+                        <p>Avocado Juice - $7</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end juice -->
+
+            <!-- start Snacks -->
+            <div class="col-md-2">
+                <div class="menubox">
+                    <div class="menubox-header">
+                        <div class="imgbox">
+                            <img src="./assets/img/snack.jpg" alt="snack" />
+                        </div>
+                        <h2 class="menubox-title">Snacks</h2>
+                    </div>
+                    <div class="menubox-body">
+                        <p>Hamburger - $7</p>
+                        <p>Hot Dog - $7</p>
+                        <p>Sandwich - $7</p>
+                        <p>Chips - $7</p>
+                        <p>Pizza - $7</p>
+                        <p>Waffle - $7</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end smoothies -->
+
+            <!-- start bread -->
+            <div class="col-md-2">
+                <div class="menubox">
+                    <div class="menubox-header">
+                        <div class="imgbox">
+                            <img src="./assets/img/bread-removebg-preview.png" alt="bread" />
+                        </div>
+                        <h2 class="menubox-title">Bread</h2>
+                    </div>
+                    <div class="menubox-body">
+                        <p>White Bread - $7</p>
+                        <p>Brown Bread - $7</p>
+                        <p>Croissant - $7</p>
+                        <p>Breadstick - $7</p>
+                        <p>Bagel - $7</p>
+                        <p>Roll - $7</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end bread -->
+
+            <!-- start cake -->
+            <div class="col-md-2">
+                <div class="menubox">
+                    <div class="menubox-header">
+                        <div class="imgbox">
+                            <img src="./assets/img/cake-removebg-preview.png" alt="cake" />
+                        </div>
+                        <h2 class="menubox-title">Cake</h2>
+                    </div>
+                    <div class="menubox-body">
+                        <p>Chocolate Cake - $7</p>
+                        <p>Cheese Cake - $7</p>
+                        <p>Vanilla Cake - $7</p>
+                        <p>Brownie - $7</p>
+                        <p>Blondie - $7</p>
+                        <p>Cupcake - $7</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end cake -->
+        </div>
+    </section>
 <!-- end menu section -->
 
 
@@ -173,7 +314,7 @@
      <!-- jquery ui css1 js1 -->
      <script src="./assets/libs/jquery-ui-1.13.2.custom/jquery-ui.min.js" type="text/javascript"></script>
      <!-- magnific popup css1 js1 -->
-     <script src="./assets/libs/Magnific-Popup-master/dist/jquery.magnific-popup.js" type="text/javascript"></script>
+     <!-- <script src="./assets/libs/Magnific-Popup-master/dist/jquery.magnific-popup.js" type="text/javascript"></script> -->
     <!-- custom js1 -->
     <script src="./js/app.js" type="text/javascript"></script>
 </body>
