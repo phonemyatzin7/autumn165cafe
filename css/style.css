@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
 /* banner h3 */
 @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+/* menu section */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 
 *{
@@ -196,6 +198,108 @@ body{
 }
 
 .history{
-    margin-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.booking{
+    margin-bottom: 25px;
+}
+
+.bookingbtn{
+    color: #000;
+    background-color: burlywood;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.bookingbtn:hover{
+    color: #000;
+    background-color: bisque;
+}
+
+.bookingpic{
+    text-align: end;
+
+    margin-bottom: 25px;
+}
+
+.fromlefts{
+    animation-name: myleft;
+    animation-duration: 3s;
+}
+
+.fromrights{
+    animation-name: myright;
+    animation-duration: 3s;
+}
+
+@keyframes myleft{
+    from{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes myright{
+    from{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 /* end about section */
+
+
+
+/* start menu section */
+#menu{
+    background-image: url(./../assets/img/cafecover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Ma Shan Zheng', cursive;
+
+    padding: 40px 40px;
+}
+
+#menu h1{
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.imgbox img{
+    height: 120px;
+}
+
+.menubox-header h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.menubox-body{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    margin-bottom: 30px;
+}
+
+@media (max-width: 800px){
+    #menu{
+        background-position: center;
+        background-size: cover;
+    }
+}
+/* end menu section */
