@@ -1,8 +1,21 @@
 // jQuery area
-$(document).ready(function(){
-    $(".test-popup-link").magnificPopup({
-        type: 'image'
-    })
+// $(document).ready(function(){
+//     $(".test-popup-link").magnificPopup({
+//         type: 'image'
+//     })
+// });
+
+$(window).scroll(function(){
+    let getscrollpoint = $(this).scrollTop();
+    // console.log(getscrollpoint);
+
+    if(getscrollpoint >= 250){
+        $(".booking").addClass("fromlefts");
+        $(".bookingpic").addClass("fromrights");
+    }else{
+        $(".booking").removeClass("fromlefts");
+        $(".bookingpic").removeClass("fromrights");
+    }
 });
 
 
