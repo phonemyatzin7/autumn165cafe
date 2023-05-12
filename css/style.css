@@ -205,7 +205,7 @@ body{
     margin-bottom: 25px;
 }
 
-.bookingbtn{
+#bookingbtn{
     color: #000;
     background-color: burlywood;
     text-decoration: none;
@@ -213,13 +213,13 @@ body{
     border-radius: 10px;
 }
 
-.bookingbtn:hover{
+#bookingbtn:hover{
     color: #000;
     background-color: bisque;
 }
 
 .bookingpic{
-    text-align: end;
+    text-align: center;
 
     margin-bottom: 25px;
 }
@@ -256,6 +256,16 @@ body{
         transform: translateX(0px);
         opacity: 1;
     }
+}
+
+
+/* modal box area */
+.modal-body form .form-control{
+    margin-bottom: 5px;
+}
+
+.modal-footer button{
+    width: 100%;
 }
 /* end about section */
 
@@ -303,3 +313,83 @@ body{
     }
 }
 /* end menu section */
+
+
+/* start contact section */
+#contact{
+    background-color: rgb(187, 113, 21);
+    text-align: center;
+
+    padding: 20px 20px;
+}
+
+.tabcontactsbox{
+    margin-bottom: 20px;
+}
+
+.tabcontacts{
+    padding: 50px;
+
+    position: relative;
+}
+
+#address,#phone,#social,#website{
+    background-color: bisque;
+}
+
+.tablinks{
+    width: 25%;
+    background-color: bisque;
+    border: none;
+    text-align: center;
+    float: left;
+
+    padding: 15px 20px;
+}
+
+.tablinks:hover{
+    background-color: rgb(177, 159, 137);
+}
+
+.card{
+    background-color: bisque;
+}
+/* end contact section */
+
+
+/* start footer section */
+footer{
+    /* background-color: rgb(187, 113, 21); */
+    background-color: #000;
+    color: #fff;
+}
+
+#menubar{
+    border-bottom: 1px solid rgb(187, 113, 21);
+
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+}
+
+#menubar ul{
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menubar ul li a{
+    color: #fff;
+    text-decoration: none;
+
+    padding: 20px 20px;
+}
+
+.copyright{
+    text-align: center;
+
+    padding: 5px 5px;
+    margin-top: 5px;
+}
+/* end footer section */
