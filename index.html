@@ -16,6 +16,36 @@
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<!-- start modal area -->
+    <div class="container">
+        <div id="bookingmodal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Book Here</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                
+                    <div class="modal-body">
+                        <form action="" method="">
+                            <input type="text" name="name" id="bookingname" placeholder="Name" autocomplete="off" class="form-control" />
+                            <input type="email" name="email" id="bookingemail" placeholder="Email" autocomplete="off" class="form-control" />
+                            <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone Number" autocomplete="off" class="form-control" />
+                            <input type="number" name="tablenumber" id="tablenumber" placeholder="Table Number" autocomplete="off" class="form-control" />
+                            <input type="date" name="bookingdate" id="bookingdate" autocomplete="off" class="form-control" />
+                            <input type="time" name="bookingtime" id="bookingtime" autocomplete="off" class="form-control" />
+                            <textarea name="message" placeholder="Please tell anything you need." cols="40" rows="5" class="form-control"></textarea>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-lg">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end modal area -->
 
 <!-- start header section -->
     <header>
@@ -54,7 +84,7 @@
                 <table>
                     <tr>
                         <td><i class="fas fa-clock 1x"></i></td>
-                        <td>Hours - Daily 7am-9pm</td>
+                        <td>Daily 7am - 9pm</td>
                     </tr>
                 </table>
 
@@ -102,7 +132,7 @@
                         <div class="service-details">
                             <h3 class="my-auto service-content">Quiet Place</h3>
                         </div>
-                        <p class="testimonial service-quote">Best place to read to work to date.</p>
+                        <p class="testimonial service-quote">Best place to read, to work, to date.</p>
                         <div class="progress-bar"></div>
                     </div>
                 </div>
@@ -144,12 +174,12 @@
             <div class="row">
                 <div class="col-md-6 align-self-center booking">
                     <h4>Booking</h4>
-                    <span><i class="fas fa-clock"></i> Hours - Daily 7am-9pm</span>
+                    <span><i class="fas fa-clock"></i> Daily 7am - 9pm</span>
                     <p>Reserve a table</p>
-                    <a href="#" class="btn btn-lg btn-primary bookingbtn">Make Booking</a>
+                    <a href="#" id="bookingbtn" class="btn btn-lg btn-primary">Make Booking</a>
                 </div>
 
-                <div class="col-md-6 text-center text-lg-end bookingpic">
+                <div class="col-md-6 bookingpic">
                     <img src="./assets/img/iu1-removebg-preview.png" width="300px" alt="iu1" />
                 </div>
             </div>
@@ -293,16 +323,77 @@
 
 
 <!-- start contact section -->
-    <section id="contact"></section>
+    <section id="contact">
+        <div class="container">
+            <h3><i class="fas fa-clock"></i> Daily 7am - 9pm</h3>
+            <div class="row mt-5">
+                <div class="col-md-5 tabcontactsbox">
+                    <div id="address" class="tabcontacts">
+                        <h1>Address</h1>
+                        <p><i class="fas fa-address-book"></i> Grindelwald,Switzerland</p>
+                    </div>
+
+                    <div id="phone" class="tabcontacts">
+                        <h1>Phone</h1>
+                        <p><i class="fas fa-phone"></i> 09 761407373</p>
+                    </div>
+
+                    <div id="social" class="tabcontacts">
+                        <h1>Social</h1>
+                        <p><i class="fab fa-facebook fa-lg"></i> Autumn 165 Cafe</p>
+                        <p><i class="fab fa-line fa-lg"></i> autumn_165</p>
+                        <p><i class="fab fa-telegram fa-lg"></i> @autumn_165</p>
+                    </div>
+
+                    <div id="website" class="tabcontacts">
+                        <h1>Website</h1>
+                        <p><i class="fas fa-globe"></i> www.autumn165cafe.com</p>
+                        <p><i class="fas fa-at"></i>autumn165@gmail.com</p>
+                    </div>
+
+                    <button id="autoopen" class="tablinks" onclick="tabbox('address',event.target)">Address</button>
+                    <button class="tablinks" onclick="tabbox('phone',event.target)">Phone</button>
+                    <button class="tablinks" onclick="tabbox('social',event.target)">Social</button>
+                    <button class="tablinks" onclick="tabbox('website',event.target)">Website</button>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Autumn 165 Cafe</h3>
+                        </div>
+
+                        <div class="card-body">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87691.45270204966!2d7.9575953142846325!3d46.6196911209908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f9eab18c79217%3A0xbfaa5c0f42972f65!2sGrindelwald%2C%20Switzerland!5e0!3m2!1sen!2ssg!4v1683620248850!5m2!1sen!2ssg" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 <!-- end contact section -->
 
 
 <!-- start footer section -->
-    <section id="footer">
-        <div>
-            
+    <footer>
+        <div class="container-fluid">
+            <div id="menubar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="copyright">
+                <p>&copy; <span id="getyear"></span> Copyright, Inc.All right reserved.</p>
+            </div>
+    
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-da03a395-e81b-414a-aa9f-0257f6e4fac7" style="position:fixed;right:0;bottom:0;"></div>
         </div>
-    </section>
+    </footer>
 <!-- end footer section -->
 
 
